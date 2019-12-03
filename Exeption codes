@@ -1,0 +1,28 @@
+1)
+import kotlin.ArithmeticException
+
+fun main (args: Array<String>){
+    try {
+        var int = 10 / 0
+        println(int)
+    } catch (e: ArithmeticException) {
+        println(e)
+    } finally {
+        println("This block always executes")
+    }
+}
+
+
+2)
+
+import kotlin.ArithmeticException
+
+fun main(args : Array<String>){
+    try{
+        var num = 10 / 0
+    }
+    catch(e: ArithmeticException){
+        // caught and handles it
+        println("Divide by zero not allowed")
+    }
+} 
